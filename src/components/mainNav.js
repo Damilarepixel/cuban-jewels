@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 
 
-
-function mainNav() {
+function MainNav() {
     return (
         <nav>
             <div>
@@ -15,9 +15,21 @@ function mainNav() {
             <div>
                 <h4>20% DISCOUNT ON ALL ITEMS</h4>
             </div>
+
+            <ul>
+                <Link to="/faq">
+                    <li>FAQ</li>
+                </Link>
+                <Link to="/support">
+                    <li>SUPPORT</li>
+                </Link>
+                <Link to="/about">
+                    <li>ABOUT US</li>
+                </Link>
+            </ul>
         </nav>
     )
 }
 
-export default mainNav
+export default MainNav
 
