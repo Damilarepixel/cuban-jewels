@@ -2,12 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+const TopNav = styled.nav`
+  display: Flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  color: #000;
+  font-size: 18px bold; 
+`
 
+const Atag = styled.ul`
+  display: flex;
+`
 
 
 function MainNav() {
     return (
-        <nav>
+        <TopNav>
             <div>
                 <h4>Mon - Fri 9am - 6pm GMT</h4>
             </div>
@@ -16,9 +27,9 @@ function MainNav() {
                 <h4>20% DISCOUNT ON ALL ITEMS</h4>
             </div>
 
-            <ul>
+            <Atag>
                 <Link to="/faq">
-                    <li>FAQ</li>
+                    <li className="list">FAQ</li>
                 </Link>
                 <Link to="/support">
                     <li>SUPPORT</li>
@@ -26,8 +37,8 @@ function MainNav() {
                 <Link to="/about">
                     <li>ABOUT US</li>
                 </Link>
-            </ul>
-        </nav>
+            </Atag>
+        </TopNav>
     )
 }
 

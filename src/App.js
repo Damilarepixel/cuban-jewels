@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import MainNav from './components/MainNav'
+import SubNav from './components/SubNav'
 import Faq from './pages/Faq'
 import Support from './pages/Support'
 import About from './pages/About'
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <div className="App">
         <MainNav />
+        <SubNav />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/faq" component={Faq} />
