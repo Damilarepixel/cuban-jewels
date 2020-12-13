@@ -6,6 +6,8 @@ import Faq from './pages/Faq'
 import Support from './pages/Support'
 import About from './pages/About'
 
+import HomeAlpha from './components/HomeAlpha'
+
 
 
 
@@ -32,7 +34,7 @@ function App() {
 function Home() {
   return (
     <div>
-      <h1>Hey, this is the home page</h1>
+      <HomeAlpha />
     </div>
   )
 }

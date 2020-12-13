@@ -1,12 +1,13 @@
 import React from 'react'
-import styled from 'styled-components'
+import '../App.css'
+import Button from './Button' 
 
-function homeAlpha() {
+function HomeAlpha() {
     return (
-        <div>
-            
+        <div style={{backgroundImage : `url(${'/img/blackring.jpg'}`}} className='top-section'>
+            <Button />
         </div>
     )
 }
 
-export default homeAlpha
+export default HomeAlpha

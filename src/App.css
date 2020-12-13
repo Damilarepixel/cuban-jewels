@@ -35,3 +35,28 @@ li {
   margin-right: 30px;
 }
 
+.top-section {
+  /* padding: 15rem; */
+  position: relative;
+  min-height: 450px;
+  text-align: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+.top-cta {
+  position: absolute;
+  margin: 10rem 5rem;
+  background-color:#d88a83;
+  padding: 15px;
+  max-width: 350px;
+  min-width: 350px;
+  border-radius: 2px;
+}
+
+.text-block {
+  margin: 10px 0px;
+}
