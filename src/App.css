@@ -1,10 +1,8 @@
-:root {
-  --body-font: 'Lato', sans-serif;
-}
-*,
+
+
 body {
   box-sizing: border-box;
-  font-family: var(--body-font);
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -59,4 +57,32 @@ li {
 
 .text-block {
   margin: 10px 0px;
+}
+
+.story-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.policy {
+  display: flex;
+  padding: 10px 50px;
+}
+
+.policy-prop {
+  display: flex;
+  padding: 0 10px;
+}
+
+.the-story {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 150px;
+  gap: 100px;
+  align-items: center;
+}
+
+.couple {
+  max-width: 448px;
+  height: auto;
 }

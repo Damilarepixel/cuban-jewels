@@ -7,6 +7,7 @@ import Support from './pages/Support'
 import About from './pages/About'
 
 import HomeAlpha from './components/HomeAlpha'
+import HomeBeta from './components/HomeBeta';
 
 
 
@@ -35,6 +36,7 @@ function Home() {
   return (
     <div>
       <HomeAlpha />
+      <HomeBeta />
     </div>
   )
 }
