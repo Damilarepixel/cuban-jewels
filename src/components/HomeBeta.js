@@ -49,12 +49,14 @@ function HomeBeta() {
                     <h3 style={story}>Our Story</h3>
                     <h1 style={BigText}>Custom Tailored Jewelry At It's Finest</h1>
                     <p style={storyLine}>Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet, Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet. </p>
+                    
+                    <LightButton as={Link} href="/" />
                 </div>
                 <div>
                     <img className='couple' src={Couple} alt='' />
                 </div>
 
-                <LightButton as={Link} href="/" />
+                
             </div>
         </div>
     )

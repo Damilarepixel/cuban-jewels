@@ -77,12 +77,26 @@ li {
 .the-story {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  padding: 150px;
-  gap: 100px;
-  align-items: center;
+  padding: 100px 200px;
+  gap: 150px;
+  align-items: center;;
+}
+
+.the-main-story {
+  text-align: left;
 }
 
 .couple {
   max-width: 448px;
   height: auto;
+}
+
+.light-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.light-button:hover .right {
+  transform: translateX(.30rem);
 }
