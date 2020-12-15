@@ -1,20 +1,14 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import James from '../Images/james.jpg'
 import Butterfly from '../Images/butterfly.jpg'
 import Tray from '../Images/tray.jpg'
 import Cross from '../Images/cross.jpg'
+import Cart from '../components/AddButton'
 
 
 
-const Order = styled.button`
-  background: transparent;
-  color: #0A1826;
-  margin-top: 5px;
-  border-bottom: 4px;
-  display: inline-block;
-`
+
 
 function HomeCharlie() {
     return (
@@ -24,47 +18,39 @@ function HomeCharlie() {
 
             <div className='charlie-container bd-grid'>
                 <div className='product-details'>
-                    <img src={James} alt='' />
+                    <img src={James} alt='' className='product-img' />
                     <span>Product Name</span>
                     <span>3,000</span>
 
 
-                    <Order as={Link} href="/">
-                        Shop Now
-                    </Order>
+                    <Cart as={Link} href="/" />
                 </div>
 
                 <div className='product-details'>
-                    <img src={Butterfly} alt='' />
+                    <img src={Butterfly} alt=''className='product-img' />
                     <span>Product Name</span>
                     <span>3,000</span>
 
 
-                    <Order as={Link} href="/">
-                        Shop Now
-                    </Order>
+                    <Cart as={Link} href="/" />
                 </div>
 
                 <div className='product-details'>
-                    <img src={Tray} alt='' />
+                    <img src={Tray} alt='' className='product-img' />
                     <span>Product Name</span>
                     <span>3,000</span>
 
 
-                    <Order as={Link} href="/">
-                        Shop Now
-                    </Order>
+                    <Cart as={Link} href="/" />
                 </div>
 
                 <div className='product-details'>
-                    <img src={Cross} alt='' />
+                    <img src={Cross} alt='' className='product-img' />
                     <span>Product Name</span>
                     <span>3,000</span>
 
 
-                    <Order as={Link} href="/">
-                        Shop Now
-                    </Order>
+                    <Cart as={Link} href="/" />
                 </div>
             </div>
         </div>
