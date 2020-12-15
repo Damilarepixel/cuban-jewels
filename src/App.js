@@ -8,6 +8,7 @@ import About from './pages/About'
 
 import HomeAlpha from './components/HomeAlpha'
 import HomeBeta from './components/HomeBeta';
+import HomeCharlie from './components/HomeCharlie';
 
 
 
@@ -37,6 +38,7 @@ function Home() {
     <div>
       <HomeAlpha />
       <HomeBeta />
+      <HomeCharlie />
     </div>
   )
 }
