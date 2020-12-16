@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import James from '../Images/james.jpg'
-import Butterfly from '../Images/butterfly.jpg'
-import Tray from '../Images/tray.jpg'
-import Cross from '../Images/cross.jpg'
+import Ice from '../Images/ice.jpg'
+import Diamond from '../Images/diamond-ring.jpg'
+import Gold from '../Images/gold-ring.jpg'
+import Band from '../Images/band.jpg'
 import Cart from '../components/AddButton'
 
 
@@ -18,7 +18,7 @@ function HomeFoxtrot() {
 
             <div className='charlie-container bd-grid'>
                 <div className='product-details' as={Link} href="/">
-                    <img src={James} alt='' className='product-img' />
+                    <img src={Ice} alt='' className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
@@ -27,7 +27,7 @@ function HomeFoxtrot() {
                 </div>
 
                 <div className='product-details'>
-                    <img src={Butterfly} alt=''className='product-img' />
+                    <img src={Diamond} alt=''className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
@@ -36,7 +36,7 @@ function HomeFoxtrot() {
                 </div>
 
                 <div className='product-details'>
-                    <img src={Tray} alt='' className='product-img' />
+                    <img src={Gold} alt='' className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
@@ -45,7 +45,7 @@ function HomeFoxtrot() {
                 </div>
 
                 <div className='product-details'>
-                    <img src={Cross} alt='' className='product-img' />
+                    <img src={Band} alt='' className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 

@@ -1,10 +1,10 @@
 import React from 'react'
-import Arrow from '../Images/arrow.svg'
+import Arrow from '../Images/white-arrow.svg'
 import { Link } from 'react-router-dom'
 
 
 const Read = {
-    color: '#0A1826',
+    color: '#fff',
     fontSize: '18px',
     fontWeight: '700'
 } 
@@ -15,7 +15,7 @@ const ArrowRight = {
     marginLeft: '.5rem'
 }
 
-function LightButton() {
+function ReadMore() {
     return (
         <div className='light-button' as={Link} href="/">
             <h3 style={Read}>Read More</h3>
@@ -24,4 +24,4 @@ function LightButton() {
     )
 }
 
-export default LightButton
+export default ReadMore

@@ -43,6 +43,12 @@ li {
   margin-right: 30px;
 }
 
+
+img {
+  max-width: 100%;
+}
+
+
 .top-section {
   /* padding: 15rem; */
   position: relative;
@@ -69,9 +75,18 @@ li {
   margin: 10px 0px;
 }
 
-.story-section {
+
+.story-section,
+.gecko-section {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+}
+
+.gecko-section {
+  background-color: #0a1826;
+  border-radius: 0px 50px 0px 50px;
+  color: #ffffff;
+  margin-top: 5rem;
 }
 
 .policy {
@@ -99,6 +114,7 @@ li {
 .couple {
   max-width: 448px;
   height: auto;
+  border-radius: 3px;
 }
 
 .light-button {
@@ -125,6 +141,8 @@ li {
   padding: 50px 0px;
   margin-top: 130px;
 }
+
+
 
 .charlie-container {
   row-gap: 3rem;
@@ -157,6 +175,14 @@ li {
   font-weight: 600;
   color: #0A1826;
   margin-top: .5rem;
+}
+
+.hotel-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*margin: 3rem 5rem;*/
+  gap: 2.5rem;
+  padding: 150px;
 }
 
 

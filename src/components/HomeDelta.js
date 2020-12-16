@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import James from '../Images/james.jpg'
-import Butterfly from '../Images/butterfly.jpg'
-import Tray from '../Images/tray.jpg'
-import Cross from '../Images/cross.jpg'
+import Rolly from '../Images/rolly.jpg'
+import Rolex from '../Images/rolex.jpg'
+import Mille from '../Images/mille.jpg'
+import Hublot from '../Images/hublot.jpg'
 import Cart from '../components/AddButton'
 
 
@@ -13,12 +13,12 @@ import Cart from '../components/AddButton'
 function HomeDelta() {
     return (
         <div className='delta-section'>
-            <h3>Featured Products</h3>
+            <h3>Wrist Watches</h3>
             <h2>Featured Products</h2>
 
             <div className='charlie-container bd-grid'>
                 <div className='product-details' as={Link} href="/">
-                    <img src={James} alt='' className='product-img' />
+                    <img src={Rolly} alt='' className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
@@ -27,7 +27,7 @@ function HomeDelta() {
                 </div>
 
                 <div className='product-details'>
-                    <img src={Butterfly} alt=''className='product-img' />
+                    <img src={Rolex} alt=''className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
@@ -36,7 +36,7 @@ function HomeDelta() {
                 </div>
 
                 <div className='product-details'>
-                    <img src={Tray} alt='' className='product-img' />
+                    <img src={Mille} alt='' className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
@@ -45,7 +45,7 @@ function HomeDelta() {
                 </div>
 
                 <div className='product-details'>
-                    <img src={Cross} alt='' className='product-img' />
+                    <img src={Hublot} alt='' className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 

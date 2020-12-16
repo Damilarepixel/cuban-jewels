@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import James from '../Images/james.jpg'
-import Butterfly from '../Images/butterfly.jpg'
-import Tray from '../Images/tray.jpg'
-import Cross from '../Images/cross.jpg'
+import Big from '../Images/big-boy.jpg'
+import Twist from '../Images/twist.jpg'
+import Links from '../Images/links.jpg'
+import Tiny from '../Images/tiny.jpg'
 import Cart from '../components/AddButton'
 
 
@@ -18,7 +18,7 @@ function HomeEcho() {
 
             <div className='charlie-container bd-grid'>
                 <div className='product-details' as={Link} href="/">
-                    <img src={James} alt='' className='product-img' />
+                    <img src={Big} alt='' className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
@@ -27,7 +27,7 @@ function HomeEcho() {
                 </div>
 
                 <div className='product-details'>
-                    <img src={Butterfly} alt=''className='product-img' />
+                    <img src={Twist} alt=''className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
@@ -36,7 +36,7 @@ function HomeEcho() {
                 </div>
 
                 <div className='product-details'>
-                    <img src={Tray} alt='' className='product-img' />
+                    <img src={Links} alt='' className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
@@ -45,7 +45,7 @@ function HomeEcho() {
                 </div>
 
                 <div className='product-details'>
-                    <img src={Cross} alt='' className='product-img' />
+                    <img src={Tiny} alt='' className='product-img' />
                     <span className='product-info'>Product Name</span>
                     <span className='product-price'>3,000</span>
 
