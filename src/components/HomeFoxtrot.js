@@ -10,9 +10,9 @@ import Cart from '../components/AddButton'
 
 
 
-function HomeCharlie() {
+function HomeFoxtrot() {
     return (
-        <div className='charlie-section'>
+        <div className='foxtrot-section'>
             <h3>Featured Products</h3>
             <h2>Featured Products</h2>
 
@@ -59,4 +59,4 @@ function HomeCharlie() {
     )
 }
 
-export default HomeCharlie
+export default HomeFoxtrot

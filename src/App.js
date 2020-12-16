@@ -9,6 +9,9 @@ import About from './pages/About'
 import HomeAlpha from './components/HomeAlpha'
 import HomeBeta from './components/HomeBeta';
 import HomeCharlie from './components/HomeCharlie';
+import HomeDelta from './components/HomeDelta'
+import HomeEcho from './components/HomeEcho'
+import HomeFoxtrot from './components/HomeFoxtrot'
 
 
 
@@ -39,6 +42,9 @@ function Home() {
       <HomeAlpha />
       <HomeBeta />
       <HomeCharlie />
+      <HomeDelta />
+      <HomeEcho />
+      <HomeFoxtrot />
     </div>
   )
 }
