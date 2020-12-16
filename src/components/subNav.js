@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
 import styled from 'styled-components'
-import Bag from '../Images/cart.svg'
+import Bag from '../Images/bag.svg'
 
 const BottomNav = styled.nav`
   display: Flex;

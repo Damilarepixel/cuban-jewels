@@ -17,6 +17,7 @@ import HomeEcho from './components/HomeEcho'
 import HomeFoxtrot from './components/HomeFoxtrot'
 import HomeGecko from './components/HomeGecko'
 import HomeHotel from './components/HomeHotel'
+import HomeGallery from './components/HomeGallery'
 
 
 
@@ -52,6 +53,7 @@ function Home() {
       <HomeFoxtrot />
       <HomeGecko />
       <HomeHotel />
+      <HomeGallery />
     </div>
   )
 }
