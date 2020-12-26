@@ -219,6 +219,34 @@ img {
   background-color: #d88a83;
 }
 
+.footer-section {
+  background-color: #0a1826;
+  width: 100%;
+  padding: 5rem;
+}
+
+.form-handle {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+
+.btn {
+  background-color: #D88A83;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
 
   .bd-grid {

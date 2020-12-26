@@ -55,7 +55,6 @@ function Home() {
       <HomeGecko />
       <HomeHotel />
       <HomeGallery />
-      <HomeFooter />
     </div>
   )
 }
