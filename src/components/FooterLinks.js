@@ -4,29 +4,47 @@ import Instagram from '../Images/instagram.svg'
 import Twitter from '../Images/twitter.svg'
 
 
-const links = {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#fff'
-}
+
 function FooterLinks() {
     return (
         <div className='footer-links'>
-            <div>
-                <h4 style={{links}}>2020, Cuban shit</h4>
+            
+
+            <div className='links-tags'>
+                <h4>Support</h4>
+                <br />
+                <p className='footer-link'>Return policy</p>
+                <p className='footer-link'>Terms of Service</p>
+                <p className='footer-link'>Contact Us</p>
             </div>
 
-            <div>
-                <h4 style={{links}}>Return policy</h4>
-                <h4 style={{links}}>Terms of Service</h4>
-                <h4 style={{links}}>Contact Us</h4>
+            <div className='links-tags'>
+
+                <h4>Support</h4>
+                <br />
+                <p className='footer-link'>Return policy</p>
+                <p className='footer-link'>Terms of Service</p>
+                <p className='footer-link'>Contact Us</p>
             </div>
 
-            <div>
-                <img src={Facebook} alt='' />
-                <img src={Twitter} alt='' />
-                <img src={Instagram} alt='' />
+            <div className='links-tags'>
+
+                <h4>Support</h4>
+                <br/>
+                <p className='footer-link'>Return policy</p>
+                <p className='footer-link'>Terms of Service</p>
+                <p className='footer-link'>Contact Us</p>
             </div>
+
+
+            <div className='socials'>
+                    <img src={Facebook} alt='' />
+                    <img src={Twitter} alt='' />
+                    <img src={Instagram} alt='' />
+                </div>
+            
+            
+            
         </div>
     )
 }

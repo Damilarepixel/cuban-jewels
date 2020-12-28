@@ -7,10 +7,7 @@ import LightButton from '../components/LightButton'
 
 
 
-const story = {
-    color : '#000',
-    fontSize : '20px'
-}
+
 
 
 const BigText = {
@@ -19,11 +16,12 @@ const BigText = {
     color: '#0A1826'
 }
 
-
+ 
 const storyLine = {
     fontSize: '16px',
     color: '#646c76',
-    lineHeight: '1.6'
+    lineHeight: '1.6',
+    marginTop: '35px'
 }
 
 
@@ -46,7 +44,7 @@ function HomeBeta() {
 
             <div className='the-story'>
                 <div className='the-main-story'>
-                    <h3 style={story}>Our Story</h3>
+                    <h3>Our Story</h3>
                     <h1 style={BigText}>Custom Tailored Jewelry At It's Finest</h1>
                     <p style={storyLine}>Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet, Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet. </p>
                     

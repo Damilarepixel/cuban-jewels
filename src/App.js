@@ -15,7 +15,7 @@ import HomeCharlie from './components/HomeCharlie';
 import HomeDelta from './components/HomeDelta'
 import HomeEcho from './components/HomeEcho'
 import HomeFoxtrot from './components/HomeFoxtrot'
-import HomeGecko from './components/HomeGecko'
+import HomeGallery from './components/HomeGallery'
 import HomeFooter from './components/HomeFooter'
 
 
@@ -50,7 +50,7 @@ function Home() {
       <HomeDelta />
       <HomeEcho />
       <HomeFoxtrot />
-      <HomeGecko />
+      <HomeGallery />
       <HomeFooter />
     </div>
   )

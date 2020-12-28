@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Bag from '../Images/bag.svg'
 
 const TopNav = styled.nav`
   display: Flex;
@@ -13,6 +14,8 @@ const TopNav = styled.nav`
 
 const Atag = styled.ul`
   display: flex;
+  justify-content: space-between;
+  
 `
 
 
@@ -20,22 +23,22 @@ function MainNav() {
     return (
         <TopNav>
             <div>
-                <h4>Mon - Fri 9am - 6pm GMT</h4>
+                <h3>Mon - Fri 9am - 6pm GMT</h3>
             </div>
 
             <div>
-                <h4>20% DISCOUNT ON ALL ITEMS</h4>
+                <h4>Logo</h4>
             </div>
 
             <Atag>
                 <Link to="/faq">
-                    <li className="list">FAQ</li>
+                    <img src={Bag} id='action-cta' alt='cart'/>
                 </Link>
                 <Link to="/support">
-                    <li>SUPPORT</li>
+                    <img src={Bag} id='action-cta'alt='cart'/>
                 </Link>
-                <Link to="/about">
-                    <li>ABOUT US</li>
+                <Link to="/support">
+                    <img src={Bag} id='action-cta'alt='cart'/>
                 </Link>
             </Atag>
         </TopNav>

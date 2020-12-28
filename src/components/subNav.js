@@ -1,12 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../App.css'
 import styled from 'styled-components'
-import Bag from '../Images/bag.svg'
+
 
 const BottomNav = styled.nav`
   display: Flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
   padding: 5px 10%;
   cursor: pointer;
   color: #000;
@@ -17,29 +19,25 @@ const BottomNav = styled.nav`
 function SubNav() {
     return (
         <BottomNav>
-            <div>
-                <h4>Logo</h4>
-            </div>
-
 
             <div className="categories">
                 <ul>
-                    <li className="list">Home</li>
-                    
-                    
-                    <li>Watches</li>
-                
-                
+                    <Link to="/faq">
+                    <li className="list" id='#'>Home</li>
+                    </Link>
+                    <Link to="/#featured" id='#featured'>
+                    <li id='#featured'>Watches</li>
+                    </Link>
+                    <Link to="/support">
                     <li>Gold chains</li>
-                
-                    <li>Rings</li>
+                    </Link>
+                    <Link to="/faq">
+                        <li className="list" id='#'>Rings</li>
+                    </Link>
                 </ul>                
             </div>
 
-            <div className="auth">
-                <h4>Sign in</h4>
-                <img src={Bag} alt='cart'/>
-            </div>
+            
 
             
         </BottomNav>
