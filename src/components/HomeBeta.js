@@ -10,11 +10,7 @@ import LightButton from '../components/LightButton'
 
 
 
-const BigText = {
-    fontSize: '50px',
-    fontWeight: '700',
-    color: '#0A1826'
-}
+
 
  
 const storyLine = {
@@ -45,11 +41,15 @@ function HomeBeta() {
             <div className='the-story'>
                 <div className='the-main-story'>
                     <h3>Our Story</h3>
-                    <h1 style={BigText}>Custom Tailored Jewelry At It's Finest</h1>
+                    <h1 id='big-text'>Custom Tailored Jewelry At It's Finest</h1>
                     <p style={storyLine}>Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet, Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet. </p>
                     
-                    <LightButton as={Link} href="/" />
+                    
                 </div>
+
+                <LightButton as={Link} href="/" className='light-btn' />
+
+                
                 <div>
                     <img className='couple' src={Couple} alt='' />
                 </div>

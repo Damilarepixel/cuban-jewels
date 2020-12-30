@@ -32,6 +32,10 @@ const Subscribe = styled.button`
   color: #000;
   border-radius: 3px;
   display: inline-block;
+
+  @media screen and (max-width: 576px) {
+      margin: 20px 0px;
+  }
 `
 
 function HomeFooter() {
@@ -52,7 +56,7 @@ function HomeFooter() {
                     color="secondary"
                 />
                 </form>
-                <Subscribe as={Link} href="/">
+                <Subscribe as={Link} href="/" className='form-btn'>
                 SUBSCRIBE
             </Subscribe>
             </div>
