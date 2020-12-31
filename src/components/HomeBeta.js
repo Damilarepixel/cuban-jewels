@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Van from '../Images/van.svg'
-import Return from '../Images/return.svg'
 import Couple from '../Images/couple.jpg'
 import LightButton from '../components/LightButton'
 
@@ -14,10 +12,11 @@ import LightButton from '../components/LightButton'
 
  
 const storyLine = {
-    fontSize: '16px',
+    fontSize: '19px',
     color: '#646c76',
     lineHeight: '1.6',
-    marginTop: '35px'
+    marginTop: '32px',
+    marginBottom: '40px'
 }
 
 
@@ -26,30 +25,16 @@ const storyLine = {
 
 function HomeBeta() {
     return (
-        <div className='story-section'>
-            <div className='policy'>
-                <div className='policy-prop'>
-                    <img src={Van} alt='' />
-                    <p style={{marginLeft: '15px'}}>Free delivery from 5,000</p>
-                </div>
-                <div className='policy-prop'>
-                    <img src={Return} alt='' />
-                    <p style={{marginLeft: '15px'}}>Free return up to 30 days</p>
-                </div>
-            </div>
+        <div className='story-section'>            
 
             <div className='the-story'>
                 <div className='the-main-story'>
                     <h3>Our Story</h3>
                     <h1 id='big-text'>Custom Tailored Jewelry At It's Finest</h1>
-                    <p style={storyLine}>Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet, Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet Lorem sit dolor amet. </p>
+                    <p style={storyLine}>Cuban Jewelry is a Lagos-based e-commerce jewelry brand that retails jewelry pieces from across the globe. We have a history of delivering luxury at the speed of joy and pleasure to our clients which has since made us the preferable store for those who are committed to top-notch quality.</p>
                     
-                    
+                    <LightButton as={Link} href="/" className='light-btn' />
                 </div>
-
-                <LightButton as={Link} href="/" className='light-btn' />
-
-                
                 <div>
                     <img className='couple' src={Couple} alt='' />
                 </div>

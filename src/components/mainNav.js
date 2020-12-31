@@ -1,46 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import Bag from '../Images/bag.svg'
+import Van from '../Images/van.svg'
 
 const TopNav = styled.nav`
-  display: Flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 20px 50px;
-  color: #000;
-  font-size: 18px bold; 
+  text-align: center;
+  padding: 10px 50px; 
 `
 
-const Atag = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  
-`
+
 
 
 function MainNav() {
     return (
         <TopNav>
-            <div>
-                <h3>Mon - Fri 9am - 6pm GMT</h3>
-            </div>
-
-            <div>
-                <h4>Logo</h4>
-            </div>
-
-            <Atag>
-                <Link to="/faq">
-                    <img src={Bag} id='action-cta' alt='cart'/>
-                </Link>
-                <Link to="/support">
-                    <img src={Bag} id='action-cta'alt='cart'/>
-                </Link>
-                <Link to="/support">
-                    <img src={Bag} id='action-cta'alt='cart'/>
-                </Link>
-            </Atag>
+            <div className='policy-prop'>
+                    <img src={Van} alt='' />
+                    <p style={{marginLeft: '15px'}}>Free delivery within Lagos</p>
+            </div>            
         </TopNav>
     )
 }
