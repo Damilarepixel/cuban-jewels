@@ -3,69 +3,62 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 import Bag from '../Images/bag.svg'
 import Search from '../Images/search.svg'
-import styled from 'styled-components'
 
 
 
-const BottomNav = styled.nav`
-  display: Flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding: 15px 10%;
-  color: #000;
-  font-size: 18px bold; 
-`
 
 
-const Atag = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  
-`
 
 
-function SubNav() {
+
+const NavBar = (props) => {
+    const openNav = () => {
+      document.getElementById("menu").classList.toggle("open");
+    };
     return (
-        <BottomNav>
-
-            <div className='logo'>
-                <h4>Logo</h4>
+      <nav className="">
+        <div className="container menuContainer">
+          <div className="centered">
+            <div className="flex">
+              <h3>Ludigi</h3>
+              <h3 onClick={openNav} className="fa fa-bars menuIcon"></h3>
             </div>
-
-            <div className="categories">
-                <ul>
-                    <Link to="/faq">
-                    <li className="list" id='#'>Home</li>
-                    </Link>
-                    <Link to="/#featured" id='#featured'>
-                    <li id='#featured'>Watches</li>
-                    </Link>
-                    <Link to="/support">
-                    <li>Gold chains</li>
-                    </Link>
-                    <Link to="/faq">
-                        <li className="list" id='#'>Rings</li>
-                    </Link>
-                </ul>                
+          </div>
+          <div id="menu" className="homeLinks centered">
+            <div>
+              <h1 title="Close Menu" onClick={openNav} className="closeBtn">
+                x
+              </h1>
+              <Link className={props.active === "home" && "accent"} to="/">
+                Home
+              </Link>
+              <Link className={props.active === "about" && "accent"} to="/about">
+                About
+              </Link>
+              <Link
+                className={props.active === "services" && "accent"}
+                to="/services"
+              >
+                Services
+              </Link>
+              <Link
+                className={props.active === "properties" && "accent"}
+                to="/properties"
+              >
+                Properties
+              </Link>
+              <Link
+                className={props.active === "contact" && "accent"}
+                to="/contact"
+              >
+                Contact
+              </Link>
             </div>
-
-
-            <Atag>
-                <Link to="/faq">
-                    <img src={Search} id='action-cta' alt='cart'/>
-                </Link>
-                <Link to="/support">
-                    <img src={Bag} id='action-cta' alt='cart'/>
-                </Link>
-            </Atag>
-
-            
-
-            
-        </BottomNav>
-    )
-}
-
-export default SubNav
+          </div>
+        </div>
+      </nav>
+    );
+  };
+  
+  export default NavBar;
 
